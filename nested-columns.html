@@ -4,8 +4,9 @@
     <meta charset="UTF-8">
     <title>Title</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/4.1.1/normalize.css"/>
-    <style>
+    <link rel="stylesheet" href="flexbox.css" />
 
+    <style>
 
         *, *:before, *:after {
             -moz-box-sizing: border-box;
@@ -20,37 +21,10 @@
             line-height: 1.5rem;
         }
 
-        .root {
-            height: 100vh;
-        }
-
-        .column {
-            display: flex;
-            flex-direction: column;
-        }
-
-        .row {
-            display: flex;
-            flex-direction: row;
-        }
-
-        .scrollable {
-            overflow-y: auto;
-        }
-
-        .vertically-centered {
-            display: flex;
-            align-items: center;
-        }
-
-
         .page-header {
             background: #eee;
             height: 3rem;
             min-height: 3rem;
-        }
-
-        .section {
         }
 
         .section-header {
@@ -59,21 +33,18 @@
             min-height: 3rem;
         }
 
-        .section-body {
-
-        }
 
     </style>
 </head>
 <body>
 
 <div class="root column">
-    <div class="page-header vertically-centered">
+    <div class="page-header ">
         page header
     </div>
 
     <div class="section column">
-        <div class="section-header vertically-centered">
+        <div class="section-header ">
             section header
         </div>
 

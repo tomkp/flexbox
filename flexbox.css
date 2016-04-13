@@ -21,8 +21,3 @@
 .scrollable {
     overflow-y: auto;
 }
-
-.vertically-centered {
-    display: flex;
-    align-items: center;
-}
