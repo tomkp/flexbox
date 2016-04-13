@@ -7,30 +7,47 @@
     <style>
 
 
+        *, *:before, *:after {
+            -moz-box-sizing: border-box;
+            -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+            position: relative;
+        }
+
+        body, html {
+            font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+            font-size: 16px;
+            line-height: 1.5rem;
+        }
+
+        .root {
+            height: 100vh;
+        }
+
         .column {
             display: flex;
             flex-direction: column;
         }
 
-        .flex {
-            flex: 1;
+        .row {
+            display: flex;
+            flex-direction: row;
         }
 
         .scrollable {
             overflow-y: auto;
         }
 
-
-
-        .page {
-            line-height: 1.5rem;
-            height: 100vh;
+        .vertically-centered {
+            display: flex;
+            align-items: center;
         }
+
 
         .page-header {
             background: #eee;
-            line-height: 3rem;
             height: 3rem;
+            min-height: 3rem;
         }
 
         .section {
@@ -38,8 +55,8 @@
 
         .section-header {
             background: #fafafa;
-            line-height: 3rem;
             height: 3rem;
+            min-height: 3rem;
         }
 
         .section-body {
@@ -50,13 +67,13 @@
 </head>
 <body>
 
-<div class="page column">
-    <div class="page-header">
+<div class="root column">
+    <div class="page-header vertically-centered">
         page header
     </div>
 
     <div class="section column">
-        <div class="section-header">
+        <div class="section-header vertically-centered">
             section header
         </div>
 
