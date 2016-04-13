@@ -62,6 +62,9 @@ body, html {
 .content-title {
     z-index: 1;
 
+    height: 4rem;
+    min-height: 4rem;
+
     font-size: 2rem;
 
     font-weight: bold;
