@@ -21,12 +21,11 @@ body, html {
 .content {
     background: #F2F5F8;
     padding: 1rem;
+    white-space: pre;
 }
 
 .scrollable {
     overflow-y: auto;
-    white-space: pre;
-    padding: 1rem;
 }
 
 .footer {
@@ -44,7 +43,7 @@ body, html {
     border-right: 1px solid #ddd;
     width: 14rem;
     min-width: 14rem;
-    background: #F2F5F8;
+    background: #eee;
 }
 @media all and (max-width: 1000px) {
     .results {
