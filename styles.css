@@ -5,14 +5,10 @@
     position: relative;
 }
 
-
-
 body, html {
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-size: 16px;
     line-height: 1.5rem;
-    height: 100%;
-    min-height: 100%;
 }
 
 
@@ -47,11 +43,13 @@ body, html {
 .results {
     border-right: 1px solid #ddd;
     width: 14rem;
+    min-width: 14rem;
     background: #F2F5F8;
 }
 @media all and (max-width: 1000px) {
     .results {
         width: 8rem;
+        min-width: 8rem;
     }
 }
 
