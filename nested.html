@@ -12,6 +12,11 @@
             flex-direction: column;
         }
 
+        .row {
+            display: flex;
+            flex-direction: row;
+        }
+
         .flex {
             flex: 1;
         }
@@ -36,10 +41,9 @@
         .section {
         }
 
-        .section-header {
+        .sidebar {
             background: #fafafa;
-            line-height: 3rem;
-            height: 3rem;
+            width: 200px;
         }
 
         .section-body {
@@ -55,9 +59,9 @@
         page header
     </div>
 
-    <div class="section column">
-        <div class="section-header">
-            section header
+    <div class="section row">
+        <div class="sidebar">
+            sidebar
         </div>
 
         <div class="section-body scrollable">
