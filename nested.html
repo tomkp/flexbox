@@ -5,7 +5,18 @@
     <title>Title</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/4.1.1/normalize.css"/>
     <style>
+        *, *:before, *:after {
+            -moz-box-sizing: border-box;
+            -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+            position: relative;
+        }
 
+        body, html {
+            font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+            font-size: 16px;
+            line-height: 1.5rem;
+        }
 
         .column {
             display: flex;
@@ -17,31 +28,31 @@
             flex-direction: row;
         }
 
-        .flex {
-            flex: 1;
-        }
-
         .scrollable {
             overflow-y: auto;
         }
 
-
-
-        .page {
-            line-height: 1.5rem;
+        .root {
             height: 100vh;
         }
 
+        .vertically-centered {
+            display: flex;
+            align-items: center;
+        }
+
+        /* ---- */
+
         .page-header {
             background: #eee;
-            line-height: 3rem;
-            height: 3rem;
+            height: 4rem;
+            min-height: 4rem;
         }
 
         .page-footer {
             background: #eee;
-            line-height: 3rem;
-            height: 3rem;
+            height: 4rem;
+            min-height: 4rem;
         }
 
         .section {
@@ -50,6 +61,7 @@
         .sidebar {
             background: #fafafa;
             width: 200px;
+            min-width: 200px;
         }
 
         .section-body {
@@ -60,8 +72,8 @@
 </head>
 <body>
 
-<div class="page column">
-    <div class="page-header">
+<div class="root column">
+    <div class="page-header vertically-centered">
         page header
     </div>
 
@@ -143,7 +155,7 @@
 
     </div>
 
-    <div class="page-footer">
+    <div class="page-footer vertically-centered">
         page footer
     </div>
 
