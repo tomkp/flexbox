@@ -44,6 +44,7 @@ body, html {
     width: 14rem;
     min-width: 14rem;
     background: #eee;
+    z-index: 2;
 }
 @media all and (max-width: 1000px) {
     .results {
@@ -61,8 +62,8 @@ body, html {
 .content-title {
     z-index: 1;
 
-    height: 4rem;
-    min-height: 4rem;
+    height: 3.5rem;
+    min-height: 3.5rem;
 
     font-size: 2rem;
 

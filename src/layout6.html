@@ -2,28 +2,19 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="./node_modules/normalize.css/normalize.css"/>
+    <title>Flexbox Forever</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/4.1.1/normalize.min.css" />
     <link rel="stylesheet" href="flexbox.css"/>
     <link rel="stylesheet" href="styles.css"/>
 </head>
 <body>
 
 <div class="root column">
-
     <div class="header">Header</div>
     <div class="flex row">
         <div class="sidebar">Sidebar</div>
-        <div class="results">
-            <div class="result">one</div>
-            <div class="result">two</div>
-            <div class="result">three</div>
-        </div>
-        <div class="flex column">
-            <div class="content-title">
-                Content Title - Everyone knows and loves the z-index for determining depth
-                ordering of elements on a page. Not all z-indexes are created equal, however: an element’s z-index only
-                determines its ordering relative to other elements in the same stacking context.
-            </div>
+        <div class="flex row">
+            <div class="results"><!--Results--></div>
             <div class="content flex scrollable">
                 FADE IN:
 
@@ -233,7 +224,6 @@
         </div>
     </div>
     <div class="footer">Footer</div>
-
 </div>
 
 </body>

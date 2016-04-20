@@ -2,16 +2,17 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="./node_modules/normalize.css/normalize.css" />
+    <title>Flexbox Forever</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/4.1.1/normalize.min.css" />
     <link rel="stylesheet" href="flexbox.css" />
     <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
 
     <div class="root column">
-        <div class="header ">Header 1</div>
-        <div class="column flex">
-            <div class="header ">Header 2</div>
+        <div class="header ">Header</div>
+        <div class="flex row">
+            <div class="sidebar">Sidebar</div>
             <div class="content flex scrollable">Content</div>
         </div>
         <div class="footer">Footer</div>

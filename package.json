@@ -14,5 +14,11 @@
   "author": "tomkp <tom@tomkp.com>",
   "keywords": [
     "flexbox"
-  ]
+  ],
+  "scripts": {
+    "publish": "surge src flexbox-forever.surge.sh"
+  },
+  "devDependencies": {
+    "surge": "^0.17.7"
+  }
 }
