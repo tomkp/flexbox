@@ -12,8 +12,19 @@ body, html {
 }
 
 
-.header {
+header {
     background: #173358;
+    color: #fff;
+    padding: 1rem;
+}
+
+footer {
+    background: #D1D9E6;
+    padding: 1rem;
+}
+
+aside {
+    background: #6479A1;
     color: #fff;
     padding: 1rem;
 }
@@ -26,17 +37,6 @@ body, html {
 
 .scrollable {
     overflow-y: auto;
-}
-
-.footer {
-    background: #D1D9E6;
-    padding: 1rem;
-}
-
-.sidebar {
-    background: #6479A1;
-    color: #fff;
-    padding: 1rem;
 }
 
 .results {
