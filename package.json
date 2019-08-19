@@ -19,6 +19,6 @@
     "publish": "surge src flexbox-forever.surge.sh"
   },
   "devDependencies": {
-    "surge": "^0.18.0"
+    "surge": "^0.21.3"
   }
 }

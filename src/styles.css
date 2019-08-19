@@ -34,9 +34,6 @@ aside {
     padding: 1rem;
 }
 
-.scrollable {
-    overflow-y: auto;
-}
 
 .results {
     border-right: 1px solid #ddd;
